@@ -1,0 +1,33 @@
+#!/bin/zsh
+
+# Colorize grep output
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
+# easier to read disk
+alias df='df -h'     # human-readable sizes
+
+# get top process eating memory
+alias psmem='ps aux | sort -nr -k 4 | head -5'
+
+# get top process eating cpu ##
+alias pscpu='ps aux | sort -nr -k 3 | head -5'
+
+# colorized ls
+alias ls='ls -G'
+alias ll='ls -Glah'
+
+#python
+alias python=python3
+alias pip=pip3
+
+#GIT aliases
+alias gitlog="git log --graph --decorate --all"
+alias gitloga="git log --oneline --decorate --graph --all"
+alias gitlogd="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --date=short"

@@ -1,0 +1,10 @@
+COLOR_DEF=$'%f'
+COLOR_USR=$'%F{243}'
+COLOR_DIR=$'%F{197}'
+COLOR_GIT=$'%F{39}'
+setopt PROMPT_SUBST
+
+
+PROMPT='${COLOR_USR}%n ${COLOR_DIR}%2~${COLOR_GIT}$(parse_git_branch)${COLOR_DEF} %(!.#.$) '
+
+# PROMPT="%B%{$fg[blue]%}[%{$fg[white]%}%n%{$fg[red]%}@%{$fg[white]%}%m%{$fg[blue]%}] %(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%{$fg[cyan]%}%c%{$reset_color%} "
