@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+# History
+export HISTFILE=$HOME/.hist/.zsh_history
+export HISTSIZE=20000
+export SAVEHIST=10000
+
+# Docker Platform
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
+# Vim for manpage
+export MANPAGER="col -b | vim -MR - "
+export MANWIDTH=120
+
+# Environment variables set everywhere
+export EDITOR="vim"
