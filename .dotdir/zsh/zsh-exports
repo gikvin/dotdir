@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 # History
 export HISTFILE=$HOME/.hist/.zsh_history
@@ -12,5 +12,4 @@ export DOCKER_DEFAULT_PLATFORM=linux/amd64
 export MANPAGER="col -b | vim -MR - "
 export MANWIDTH=120
 
-# Environment variables set everywhere
-export EDITOR="vim"
+export EDITOR=vim
